@@ -93,14 +93,24 @@ Use tables only when exact lookup matters more than pattern recognition, or when
 
 ## Visual System
 
-Use a restrained consulting palette: ink, muted gray, white, paper gray, blue, deep navy, cyan, amber, red, and green. Use large serif titles for cover and section headings, sans-serif body text, crisp chart lines, and readable labels. Avoid logos, copied proprietary designs, decorative blobs, stock-like hero layouts, and over-rounded components.
+Use a restrained consulting palette, but do not default to blue. Before writing CSS, choose a palette system from the report topic and industry. Each report should define:
+
+- `--accent`: the dominant analytical color.
+- `--accent-2`: a secondary contrast color.
+- `--accent-warm`: a risk, urgency, or opportunity accent.
+- `--deep`: the dark cover/report color.
+- neutral ink, paper, line, and muted text colors.
+
+Blue is only one possible accent. If the report subject is not naturally blue-coded, choose another dominant family such as emerald, teal, burgundy, graphite/brass, forest/coral, violet/lime, rust/steel, or oxblood/amber. Avoid one-note palettes where most charts, headings, borders, and cover elements use the same hue.
+
+Use large serif titles for cover and section headings, sans-serif body text, crisp chart lines, and readable labels. Avoid logos, copied proprietary designs, decorative blobs, stock-like hero layouts, generic blue network covers, and over-rounded components.
 
 ## HTML Implementation
 
 - Produce one `.html` file.
 - Embed all CSS in `<style>`.
 - Use HTML/CSS/SVG for charts.
-- Embed generated cover images as local/base64 assets when used.
+- Embed generated cover images as local/base64 assets when used. If image generation is unavailable, build a self-contained CSS/SVG cover with topic-specific motifs; a gradient-only cover is not sufficient.
 - Do not use external JavaScript libraries, CDNs, remote fonts, or external images unless the user explicitly provides assets.
 - Use responsive media queries so charts stack on narrow screens.
 - Use A4 portrait print CSS:
@@ -118,6 +128,7 @@ Before delivery, verify:
 - The report is a vertical HTML report, not a slide deck or landing page.
 - The file is self-contained.
 - The cover has a topic-specific visual background or equivalent self-contained image-like visual.
+- The palette is visibly topic-specific and not dominated by a default corporate cool-color system.
 - Cover title placement follows the background image composition and remains readable.
 - The content is substantial and analytical.
 - Each major page has sufficient information density.

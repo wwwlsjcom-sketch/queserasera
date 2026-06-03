@@ -2,7 +2,27 @@
 
 A Codex skill for generating self-contained, portrait HTML consulting reports with dense analysis, exhibit-style visuals, themed cover art, and print/PDF readiness.
 
-The packaged skill is currently named `mckinsey-report` because its trigger language targets McKinsey-style consulting report requests. This project is independent and is not affiliated with, endorsed by, or sponsored by McKinsey & Company.
+This project is independent and is not affiliated with, endorsed by, or sponsored by McKinsey & Company.
+
+## Standalone Skill Link
+
+Use this link when installing or sharing the skill:
+
+https://github.com/wwwlsjcom-sketch/queserasera/tree/main/skills/queserasera
+
+In Codex, you can ask:
+
+```text
+$skill-installer install https://github.com/wwwlsjcom-sketch/queserasera/tree/main/skills/queserasera
+```
+
+Or install from GitHub with the helper script:
+
+```bash
+install-skill-from-github.py --url https://github.com/wwwlsjcom-sketch/queserasera/tree/main/skills/queserasera
+```
+
+Restart Codex after installing so the skill can be discovered.
 
 ## What It Does
 
@@ -21,35 +41,21 @@ The packaged skill is currently named `mckinsey-report` because its trigger lang
 
 ```text
 .
-├── SKILL.md
-├── _meta.json
-├── agents/
-├── assets/
-│   ├── html-report-template.html
-│   └── templates/
-├── references/
-└── scripts/
-    └── validate_report.py
+├── README.md
+├── LICENSE
+├── CHANGELOG.md
+└── skills/
+    └── queserasera/
+        ├── SKILL.md
+        ├── _meta.json
+        ├── agents/
+        ├── assets/
+        │   ├── html-report-template.html
+        │   └── templates/
+        ├── references/
+        └── scripts/
+            └── validate_report.py
 ```
-
-## Installation
-
-Copy this folder into your Codex skills directory:
-
-```powershell
-# Windows PowerShell
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills\mckinsey-report"
-Copy-Item -Recurse -Force .\* "$env:USERPROFILE\.codex\skills\mckinsey-report\"
-```
-
-On macOS or Linux:
-
-```bash
-mkdir -p ~/.codex/skills/mckinsey-report
-cp -R ./* ~/.codex/skills/mckinsey-report/
-```
-
-Restart Codex after installing so the skill can be discovered.
 
 ## Usage
 

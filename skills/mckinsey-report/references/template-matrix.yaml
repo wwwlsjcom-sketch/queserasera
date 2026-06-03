@@ -1,0 +1,153 @@
+templates:
+  classic-consulting:
+    use_when:
+      - general strategy
+      - transformation
+      - operating model
+      - mixed executive consulting report
+    audience:
+      - executive team
+      - strategy team
+    cover_alignment: left_or_center
+    default_exhibits:
+      - ranking-bar
+      - stacked-share
+      - driver-tree
+      - market-trend-index
+      - option-scorecard
+      - implementation-roadmap
+    close:
+      - recommended path
+      - decision implications
+      - next analyses
+
+  board-brief:
+    use_when:
+      - board report
+      - CEO briefing
+      - executive committee decision
+      - governance update
+    audience:
+      - board
+      - executive committee
+    cover_alignment: right_or_left_by_image
+    default_exhibits:
+      - decision-brief
+      - option-scorecard
+      - risk-heatmap
+      - scenario-grid
+      - watch-point-tracker
+    close:
+      - board questions
+      - decision gates
+      - risk ownership
+
+  market-intelligence:
+    use_when:
+      - market research
+      - industry research
+      - market entry
+      - competitive landscape
+      - category opportunity
+    audience:
+      - executive team
+      - strategy team
+      - market intelligence
+    cover_alignment: left_when_market_visual_right
+    default_exhibits:
+      - market-trend-index
+      - market-map
+      - value-chain
+      - competitor-positioning
+      - opportunity-matrix
+    close:
+      - attractive segments
+      - entry implications
+      - watch points
+
+  investment-memo:
+    use_when:
+      - investment analysis
+      - M&A screening
+      - funding round review
+      - capital allocation
+    audience:
+      - investment committee
+      - board
+      - corporate development
+    cover_alignment: right_when_finance_visual_left
+    default_exhibits:
+      - thesis-scorecard
+      - unit-economics-bridge
+      - market-trend-index
+      - scenario-grid
+      - watch-point-tracker
+    close:
+      - investment stance
+      - diligence questions
+      - deal gates
+
+  risk-review:
+    use_when:
+      - risk assessment
+      - compliance review
+      - regulatory review
+      - cybersecurity
+      - operational resilience
+    audience:
+      - risk committee
+      - compliance
+      - executive team
+    cover_alignment: left_or_right_by_risk_visual
+    default_exhibits:
+      - risk-heatmap
+      - causal-map
+      - scenario-grid
+      - implementation-roadmap
+      - watch-point-tracker
+    close:
+      - mitigation options
+      - escalation thresholds
+      - early warning indicators
+
+  product-strategy:
+    use_when:
+      - product strategy
+      - growth strategy
+      - roadmap
+      - user funnel
+      - SaaS/product review
+    audience:
+      - product leadership
+      - growth team
+      - executive team
+    cover_alignment: left_or_center_by_product_visual
+    default_exhibits:
+      - funnel-analysis
+      - customer-journey
+      - feature-priority-matrix
+      - implementation-roadmap
+    close:
+      - roadmap implications
+      - prioritization
+      - operating cadence
+
+industry_visual_tone:
+  financial-services:
+    palette: charcoal, ink, muted blue, small amber risk accents
+    cover_subjects: audit trails, secure data, institutional architecture, document layers
+  healthcare:
+    palette: clean blue, clinical green, white, slate
+    cover_subjects: care pathways, diagnostics, clinical operations, lab systems
+  consumer-retail:
+    palette: warm neutral, blue-gray, restrained red or amber accents
+    cover_subjects: category shelves, demand signals, customer journey, baskets
+  manufacturing:
+    palette: deep navy, steel gray, cyan accents
+    cover_subjects: production lines, machinery, sensor overlays, MES/SCADA traces
+  technology-saas:
+    palette: deep ink, electric blue, gray, one sharp accent
+    cover_subjects: product workflows, API layers, telemetry, modular interfaces
+  energy-infrastructure:
+    palette: dark teal, grid green, navy, steel
+    cover_subjects: grids, load curves, assets, infrastructure, resilience systems

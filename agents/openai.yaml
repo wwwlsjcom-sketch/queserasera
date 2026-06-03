@@ -1,0 +1,4 @@
+interface:
+  display_name: "McKinsey Report"
+  short_description: "用 6 个模板与 24 个 Exhibit 模块生成竖屏、高信息密度咨询报告 HTML。"
+  default_prompt: "根据提供材料，先选择合适的报告模板和 Exhibit 模块，再生成一份竖屏麦肯锡风格 HTML 咨询报告：包含主题化封面背景图、高信息密度分析页面、Exhibit 图表、证据面板、管理层含义和来源/假设说明。"

@@ -2,6 +2,8 @@
 
 Open-source repository for the Codex skill `mckinsey-report`: a reusable skill for generating portrait, self-contained HTML consulting reports with dense analysis, exhibit-style visuals, themed cover art, and print/PDF readiness.
 
+This repository open-sources a **skill**, not a full agent. The skill is a reusable capability module that can be installed into Codex and invoked inside an agentic workflow, but it does not package an autonomous intelligent agent by itself.
+
 This project is independent and is not affiliated with, endorsed by, or sponsored by McKinsey & Company.
 
 ## Standalone Skill Link
@@ -115,7 +117,7 @@ The validator checks for common issues such as missing portrait print CSS, exter
     └── mckinsey-report/
         ├── SKILL.md
         ├── _meta.json
-        ├── agents/
+        ├── agents/        # optional local workspace; not an open-source agent package
         ├── assets/
         │   ├── html-report-template.html
         │   └── templates/
@@ -125,6 +127,7 @@ The validator checks for common issues such as missing portrait print CSS, exter
 
 ## Notes
 
+- This repository publishes a reusable Codex skill, not a standalone open-source intelligent agent.
 - Do not use this skill to imply affiliation with any consulting firm.
 - Generated reports should be reviewed before external use, especially for business, legal, financial, medical, or regulated-domain analysis.
 - Directional or illustrative exhibits should be labeled as such.
